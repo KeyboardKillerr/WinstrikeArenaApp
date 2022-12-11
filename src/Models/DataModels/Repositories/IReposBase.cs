@@ -14,6 +14,4 @@ namespace DataModels.Repositories
         Task<int> UpdateAsync(TTable table);
         Task<int> DeleteAsync(Guid id);
     }
-
-    public interface IGameRep : IReposBase<Game> { }
 }
