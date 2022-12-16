@@ -5,5 +5,5 @@ using System.Text;
 
 namespace DataModels.Repositories
 {
-    public interface IGenreRepGameRep : IReposBase<Genre> { }
+    public interface IGenreRep : IReposBase<Genre> { }
 }

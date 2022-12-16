@@ -9,8 +9,8 @@ namespace DataModels.Entities
         public string Name { get; set; } = null!;
         public string? Description { get; set; }
         public int SizeMb { get; set; }
-        public IList<User> Users { get; } = new List<User>();
-        public IList<Computer> Installed { get; } = new List<Computer>();
-        public IList<Genre> GamesGenres { get; } = new List<Genre>();
+        public IList<User> Users { get; set; } = new List<User>();
+        public IList<Computer> Installed { get; set; } = new List<Computer>();
+        public IList<Genre> GamesGenres { get; set; } = new List<Genre>();
     }
 }

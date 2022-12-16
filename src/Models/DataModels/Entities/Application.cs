@@ -9,6 +9,6 @@ namespace DataModels.Entities
         public string Name { get; set; } = null!;
         public string? Description { get; set; }
         public int SizeMb { get; set; }
-        public IList<Computer> Installed { get; } = new List<Computer>();
+        public IList<Computer> Installed { get; set; } = new List<Computer>();
     }
 }

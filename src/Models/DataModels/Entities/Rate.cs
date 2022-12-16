@@ -12,7 +12,7 @@ namespace DataModels.Entities
         public DateTime StartDateTime { get; set; }
         public DateTime EndDateTime { get; set; }
         public double Price { get; set; }
-        public IList<User> Users { get; } = new List<User>();
+        public IList<User> Users { get; set; } = new List<User>();
         [ForeignKey("FK_ZoneId")]
         public Guid ZoneId { get; set; }
         public Zone Zone { get; set; } = null!;

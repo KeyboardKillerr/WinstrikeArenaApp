@@ -12,9 +12,9 @@ namespace DataModels.Entities
         public DateTime LoginDateTime { get; set; }
         [Key]
         [ForeignKey("FK_UserId")]
-        public Guid UserId { get; set; }
+        public Guid Id { get; set; } //UserId
         public User User { get; set; } = null!;
         [ForeignKey("FK_ComputerId")]
-        public Guid ComputerId { get; set; } 
+        public Guid ComputerId { get; set; }
     }
 }

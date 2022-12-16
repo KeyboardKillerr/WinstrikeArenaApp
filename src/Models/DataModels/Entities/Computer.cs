@@ -13,8 +13,8 @@ namespace DataModels.Entities
         public string Motherboard { get; set; } = null!;
         public string Disk { get; set; } = null!;
         public int DiskSizeMb { get; set; }
-        public IList<Game> InstalledGames { get; } = new List<Game>();
-        public IList<Application> InstalledApps { get; } = new List<Application>();
+        public IList<Game> InstalledGames { get; set; } = new List<Game>();
+        public IList<Application> InstalledApps { get; set; } = new List<Application>();
         [ForeignKey("FK_ZoneId")]
         public Guid ZoneId { get; set; }
         public Zone Zone { get; set; } = null!;

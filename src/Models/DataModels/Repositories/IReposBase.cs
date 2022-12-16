@@ -10,7 +10,7 @@ namespace DataModels.Repositories
     public interface IReposBase<TTable> where TTable : class
     {
         IQueryable<TTable> Items { get; }
-        Task<TTable> GetItemByIdAsync(Guid id);
+        Task<TTable?> GetItemByIdAsync(Guid id);
         Task<int> UpdateAsync(TTable table);
         Task<int> DeleteAsync(Guid id);
     }

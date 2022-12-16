@@ -8,6 +8,6 @@ namespace DataModels.Entities
     {
         public string Name { get; set; } = null!;
         public string? Description { get; set; }
-        public IList<Game> Games { get; } = new List<Game>();
+        public IList<Game> Games { get; set; } = new List<Game>();
     }
 }

@@ -12,7 +12,7 @@ namespace DataModels.Entities
         public string? FullName { get; set; }
         public int PhoneNumber { get; set; }
         public bool Administartor { get; set; }
-        public IList<Game> FavoriteGames { get; } = new List<Game>();
-        public IList<Rate> Rates { get; } = new List<Rate>();
+        public IList<Game> FavoriteGames { get; set; } = new List<Game>();
+        public IList<Rate> Rates { get; set; } = new List<Rate>();
     }
 }
